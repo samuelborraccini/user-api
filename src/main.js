@@ -17,7 +17,7 @@ app.get('/', (req,res) => {
 })
 
 app.use('/auth', authRoutes);
-app.use('/protected', checkAuth, (req,res) => {res.send('token was verified')})
+app.get('/protected', checkAuth, (req,res) => {res.send('token was verified')})
 
 app.listen(4000, () => console.log('server started'))
 
