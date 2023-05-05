@@ -23,7 +23,7 @@ Este proyecto fue creado para moestrar funcionalidad de conexion a bases de dato
 ## `POST`
   * '/auth/find' --> Ruta para buscar usuarios - parametro de entrada: {username:username}
   * '/auth/create' --> Ruta para crear usuarios - parametro de entrada: {username:username, password:password}
-  * '/auth/login' --> Ruta para ingresar al sistema con credenciales - parametros de entrada: {username:username, password:password}
+  * '/auth/login' --> Ruta para ingresar al sistema con credenciales y setear cookie - parametros de entrada: {username:username, password:password}
 
 ## `PUT`
   * '/auth/update' --> Ruta para actualizar datos de usuario - parametro de entrada: {username:username, newUsername:newUsername}
